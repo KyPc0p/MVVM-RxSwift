@@ -13,6 +13,9 @@
 		79234E27290152E500AE2A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79234E25290152E500AE2A9C /* Main.storyboard */; };
 		79234E29290152E700AE2A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79234E28290152E700AE2A9C /* Assets.xcassets */; };
 		79234E2C290152E700AE2A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79234E2A290152E700AE2A9C /* LaunchScreen.storyboard */; };
+		79234E35290153A600AE2A9C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 79234E34290153A600AE2A9C /* RxCocoa */; };
+		79234E37290153A600AE2A9C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 79234E36290153A600AE2A9C /* RxRelay */; };
+		79234E39290153A600AE2A9C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 79234E38290153A600AE2A9C /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79234E39290153A600AE2A9C /* RxSwift in Frameworks */,
+				79234E37290153A600AE2A9C /* RxRelay in Frameworks */,
+				79234E35290153A600AE2A9C /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,11 @@
 			dependencies = (
 			);
 			name = "MVVM + RxSwift";
+			packageProductDependencies = (
+				79234E34290153A600AE2A9C /* RxCocoa */,
+				79234E36290153A600AE2A9C /* RxRelay */,
+				79234E38290153A600AE2A9C /* RxSwift */,
+			);
 			productName = "MVVM + RxSwift";
 			productReference = 79234E1C290152E500AE2A9C /* MVVM + RxSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 79234E13290152E500AE2A9C;
+			packageReferences = (
+				79234E33290153A600AE2A9C /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 79234E1D290152E500AE2A9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -302,9 +316,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ArtemKharshenko.ru.MVVM---RxSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +347,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ArtemKharshenko.ru.MVVM---RxSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +378,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		79234E33290153A600AE2A9C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		79234E34290153A600AE2A9C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79234E33290153A600AE2A9C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		79234E36290153A600AE2A9C /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79234E33290153A600AE2A9C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		79234E38290153A600AE2A9C /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79234E33290153A600AE2A9C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 79234E14290152E500AE2A9C /* Project object */;
 }
