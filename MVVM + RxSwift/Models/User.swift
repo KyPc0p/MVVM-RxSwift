@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct User: Codable {
+struct User: Decodable {
     let id, userId: Int
-    let title, body: String
+    var title, body: String
 }

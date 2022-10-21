@@ -11,16 +11,13 @@
         <!--Main View Controller-->
         <scene sceneID="obI-do-nxN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6pZ-SM-9VB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Cto-RQ-Y6U" customClass="MainViewController" customModule="MVVM___RxSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zKc-6M-Qqg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9r4-hq-dg6">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9r4-hq-dg6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="9zo-va-NNz">
                                         <rect key="frame" x="0.0" y="50" width="375" height="43.666667938232422"/>
@@ -35,12 +32,19 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d1K-XY-SMB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9r4-hq-dg6" firstAttribute="leading" secondItem="d1K-XY-SMB" secondAttribute="leading" id="4Th-A3-J0V"/>
+                            <constraint firstAttribute="bottom" secondItem="9r4-hq-dg6" secondAttribute="bottom" id="Bmi-V3-fjU"/>
+                            <constraint firstItem="9r4-hq-dg6" firstAttribute="trailing" secondItem="d1K-XY-SMB" secondAttribute="trailing" id="cwt-jg-q52"/>
+                            <constraint firstItem="9r4-hq-dg6" firstAttribute="top" secondItem="zKc-6M-Qqg" secondAttribute="top" id="u7e-ak-eZb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="K1P-We-Utf"/>
                     <connections>
                         <outlet property="tableView" destination="9r4-hq-dg6" id="lXj-p5-ITl"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6pZ-SM-9VB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="391" y="-10"/>
         </scene>
