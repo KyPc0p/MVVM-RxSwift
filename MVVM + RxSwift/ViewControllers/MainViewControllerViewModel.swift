@@ -9,14 +9,14 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class ViewModel {
+class MainViewControllerViewModel {
     var users = BehaviorSubject(value: [User]())
     
     func fetchUsers() {
         NetworkManager.shared.fetchData([User].self, from: Links.url.rawValue) { result in
             switch result {
             case.success(let user):
-                self.users.on(.next(user)) //уведомили всех подписчиков об ивенте
+                self.users.onNext(user) 
             case.failure(let error):
                 print(error)
             }
@@ -26,19 +26,19 @@ class ViewModel {
     func addUser(user: User) {
         guard var users = try? users.value() else { return }
         users.insert(user, at: 0)
-        self.users.on(.next(users))
+        self.users.onNext(users)
     }
     
     func deleteUser(index: Int) {
         guard var users = try? users.value() else { return }
         users.remove(at: index)
-        self.users.on(.next(users))
+        self.users.onNext(users)
     }
     
     func editUser(title: String, index: Int) {
         guard var users = try? users.value() else { return }
-        users[index].title = title
-        self.users.on(.next(users))
+        users[index].name = title
+        self.users.onNext(users)
     }
     
 }

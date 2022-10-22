@@ -8,7 +8,8 @@
 import Foundation
 
 enum Links: String {
-    case url = "https://jsonplaceholder.typicode.com/posts"
+    case url = "https://jsonplaceholder.typicode.com/users"
+//https://jsonplaceholder.typicode.com/users
 }
 
 enum NetworkError: Error {

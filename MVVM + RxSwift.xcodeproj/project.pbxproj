@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		791C85F0290159000095DDE2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C85EF290159000095DDE2 /* User.swift */; };
-		791C85F72901598D0095DDE2 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C85F62901598D0095DDE2 /* ViewControllerViewModel.swift */; };
+		791C85F72901598D0095DDE2 /* MainViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C85F62901598D0095DDE2 /* MainViewControllerViewModel.swift */; };
 		791C85F929015D6C0095DDE2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C85F829015D6C0095DDE2 /* NetworkManager.swift */; };
 		79234E20290152E500AE2A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79234E1F290152E500AE2A9C /* AppDelegate.swift */; };
 		79234E22290152E500AE2A9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79234E21290152E500AE2A9C /* SceneDelegate.swift */; };
@@ -19,11 +19,12 @@
 		79234E35290153A600AE2A9C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 79234E34290153A600AE2A9C /* RxCocoa */; };
 		79234E37290153A600AE2A9C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 79234E36290153A600AE2A9C /* RxRelay */; };
 		79234E39290153A600AE2A9C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 79234E38290153A600AE2A9C /* RxSwift */; };
+		7928C6C62903BFDC00DA70E1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928C6C52903BFDC00DA70E1 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		791C85EF290159000095DDE2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		791C85F62901598D0095DDE2 /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
+		791C85F62901598D0095DDE2 /* MainViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerViewModel.swift; sourceTree = "<group>"; };
 		791C85F829015D6C0095DDE2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		79234E1C290152E500AE2A9C /* MVVM + RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM + RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79234E1F290152E500AE2A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +34,7 @@
 		79234E28290152E700AE2A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79234E2B290152E700AE2A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79234E2D290152E700AE2A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7928C6C52903BFDC00DA70E1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				79234E23290152E500AE2A9C /* MainViewController.swift */,
-				791C85F62901598D0095DDE2 /* ViewControllerViewModel.swift */,
+				791C85F62901598D0095DDE2 /* MainViewControllerViewModel.swift */,
+				7928C6C52903BFDC00DA70E1 /* TableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -212,8 +215,9 @@
 				791C85F929015D6C0095DDE2 /* NetworkManager.swift in Sources */,
 				791C85F0290159000095DDE2 /* User.swift in Sources */,
 				79234E24290152E500AE2A9C /* MainViewController.swift in Sources */,
-				791C85F72901598D0095DDE2 /* ViewControllerViewModel.swift in Sources */,
+				791C85F72901598D0095DDE2 /* MainViewControllerViewModel.swift in Sources */,
 				79234E20290152E500AE2A9C /* AppDelegate.swift in Sources */,
+				7928C6C62903BFDC00DA70E1 /* TableViewCell.swift in Sources */,
 				79234E22290152E500AE2A9C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
