@@ -30,7 +30,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func setUpNavBar() {
-        title = "List"
+        title = "Contact List"
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let navBarAppearance = UINavigationBarAppearance()
@@ -55,8 +55,13 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         viewModel.users.bind(to: tableView.rx.items(
             cellIdentifier: "cell",
             cellType: UITableViewCell.self)) { (row, item, cell) in
-                cell.textLabel?.text = item.name
-                cell.detailTextLabel?.text = "\(item.id)"
+                var content = cell.defaultContentConfiguration()
+                content.text = item.name
+                content.textProperties
+                content.secondaryText = "\(item.email)"
+                content.image = UIImage(systemName: "person")
+                content.imageProperties.tintColor = .red
+                cell.contentConfiguration = content
             }.disposed(by: bag)
         
         //itemSelected
